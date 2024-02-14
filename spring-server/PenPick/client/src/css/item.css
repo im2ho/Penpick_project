@@ -1,0 +1,50 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  padding: 16px;
+}
+
+.item__container {
+  line-height: 1;
+  list-style: none;
+  display: grid;
+  row-gap: 50px;
+  column-gap: 10px;
+  grid-template-columns: calc(100% / 4) calc(100% / 4) calc(100% / 4) calc(
+      100% / 4
+    );
+}
+
+.item {
+  width: 200px;
+}
+
+.fresh_pay {
+  font-size: 10px;
+}
+.select_fresh {
+  list-style: none;
+}
+.item > .description {
+  display: flex;
+}
+
+.item > .description > .infomation {
+  flex: 1;
+}
+
+.item > .description > .amount {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item > .description > .amount > input {
+  width: 90px;
+}
+
+.add__button {
+  width: 100%;
+  cursor: pointer;
+}

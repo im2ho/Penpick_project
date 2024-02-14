@@ -1,0 +1,241 @@
+#AllContain {
+  min-width: 600px;
+}
+#MapImg {
+  width: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#MapImg:hover {
+  filter: brightness(0.8);
+}
+
+/* 펜션 검색창 */
+#PensionInput {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  height: 40px;
+  width: 110px;
+  margin-top: 4px;
+  text-align: center;
+}
+#HeaderPensionInputNumber {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  height: 40px;
+  width: 34px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+#HeaderPensionInputNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#HeaderPensionInputDate {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  height: 40px;
+  width: 130px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* 헤더부분 Hr */
+#PensionListHr {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-transition: background-color 9999s ease-out;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(242, 242, 242) inset !important;
+  -webkit-text-fill-color: rgb(19, 18, 18) !important;
+}
+
+/* 인원수 input창 */
+#PensionInputNumber {
+  width: 60px;
+}
+
+/* 검색 버튼 */
+#PensionSearchButton {
+  margin-top: -3px;
+  border: none;
+  background-color: rgb(242, 242, 242);
+}
+
+#container {
+  width: 1400px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#firstBox {
+  width: 400px;
+  padding-top: 75px;
+  background-color: white;
+}
+
+/* 검색필터 */
+#filter {
+  width: 350px;
+  height: 700px;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* 매진숙소 제외 필터링 */
+#filterException {
+  margin-left: 10px;
+  top: -1.5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#filterRange {
+  width: 300px;
+}
+
+#hrfilter {
+  width: 300px;
+  color: rgb(160, 160, 160);
+}
+
+#filterButton {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid rgb(228, 228, 228);
+  font-size: 11px;
+  font-weight: 600;
+  color: rgb(34, 33, 33);
+  width: 80px;
+  height: 35px;
+}
+
+#filterButton:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+#filterdescription {
+  margin-left: 10px;
+  font-size: 12px;
+  color: rgb(151, 151, 151);
+}
+
+#filterTitle {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#filterCheckbox {
+  margin: 0 0 -1005px 0;
+}
+
+/* 펜션 검색 결과 모음 */
+#PensionSearchList {
+  padding-top: 30px;
+}
+
+/* 펜션 이미지랑 설명 감싼 박스 */
+#pensionBox {
+  margin-top: 96px;
+  margin-bottom: -93px;
+  display: grid;
+  grid-template-columns: 380px 300px;
+  column-gap: 50px;
+}
+
+/* 펜션 검색 결과 나누는 hr바 */
+#PensionSearchListhr {
+  color: rgb(151, 151, 151);
+  margin-top: 30px;
+  width: 900px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+/* 펜션 검색 결과 이미지 */
+#pensionSearchImg {
+  width: 370px;
+  height: 230px;
+  background-color: lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#pensionSearchImg:hover {
+  filter: brightness(0.8);
+}
+
+/* 펜션 검색 결과 상세 설명 */
+#pensionDescription {
+  margin-left: 10px;
+  font-size: 13px;
+  width: 500px;
+}
+
+/* 펜션 이름 */
+#pensionName {
+  font-size: 17px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#pensionName:hover {
+  color: rgb(5, 117, 236);
+}
+
+#pensionlistpageButton {
+  margin-top: 100px;
+  background-color: none;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  margin-right: 5px;
+}
+
+#pensionlistpageButton:hover {
+  box-shadow: 0px 2px 4px gray;
+}
+
+#paginationButtonBox {
+  margin: auto;
+  width: 0px;
+}
+
+.page-item.active {
+}
+
+.page-item {
+  color: black;
+}
+
+#pensionListMapLink {
+  border: none;
+  background-color: white;
+}
+
+#pensionListLoading {
+  margin-top: 300px;
+  margin-bottom: 400px;
+  width: 100px;
+  height: 100px;
+  color: gray;
+}
+
+#bigfirstbox {
+  margin-left: 10px;
+}

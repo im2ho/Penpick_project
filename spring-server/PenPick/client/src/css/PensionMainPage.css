@@ -1,0 +1,677 @@
+/* 메인페이지 전체 */
+
+/*PenPick 메인페이지 이미지*/
+#BannerImg1 {
+  background: url("../img/메인커버사진2.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  color: rgb(255, 255, 255);
+  margin-top: 93px;
+}
+
+/* 초기 상태에서 이미지를 전체 화면에 꽉 차게 설정 */
+.full-screen-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 다른 필요한 스타일들도 추가할 수 있습니다. */
+}
+
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "NanumSquareNeo-Variable";
+}
+
+#Login_SignUp_Menu {
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+/* 로그인 회원가입 버튼 */
+#Login,
+#SignUp {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/* 로그인 버튼 */
+#Login {
+  margin-right: 40px;
+}
+
+/* 장바구니 이미지 */
+#CartImg {
+  width: 50px;
+}
+
+/*  */
+/*PenPick 메인페이지 내 모든 a태그*/
+#PensionListLink,
+#MypageLink,
+#QnALink,
+#CartListLink {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration-line: none;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*PenPick 배너 카테고리 링크*/
+#BannerLink {
+  padding-top: 30px;
+}
+
+#MainLink {
+  text-decoration: none;
+  color: white;
+}
+
+/*PenPick 타이틀*/
+#MainLogo {
+  font-size: 30px;
+  font-weight: 900;
+  margin-right: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*PenPick 로고이미지*/
+#logo {
+  width: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+/* 메인페이지 멘트 감싼 박스 */
+#MainTitleBox {
+  width: 1200px;
+  margin: auto;
+  margin-top: -16px;
+}
+
+/* 메인페이지 멘트 */
+#MainTitle {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 200px;
+}
+
+#maintitlemarker {
+  width: 30px;
+  margin-left: 10px;
+  animation: marker 3s infinite;
+  margin-right: 10px;
+  padding-bottom: 15px;
+}
+
+@keyframes marker {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+/* 초기 상태에서 요소를 투명하고 보이지 않도록 설정 */
+#firstmt {
+  position: relative;
+  animation: firstmt 3s ease forwards;
+  /* 다른 필요한 스타일들도 추가할 수 있습니다. */
+}
+
+@keyframes firstmt {
+  0% {
+    top: 40px;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+    top: 50px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0; /* 이동할 거리를 설정 (음수는 위로 이동) */
+  }
+}
+
+/* 초기 상태에서 요소를 투명하고 보이지 않도록 설정 */
+#mt3 {
+  opacity: 0;
+  visibility: hidden;
+  animation: mt3 4s ease-in-out forwards;
+  /* 다른 필요한 스타일들도 추가할 수 있습니다. */
+}
+
+/* 애니메이션 키프레임 정의 */
+@keyframes mt3 {
+  30% {
+    opacity: 0;
+
+    visibility: hidden;
+  }
+  70% {
+    opacity: 1;
+    color: rgb(255, 85, 0);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* 초기 상태에서 요소를 투명하고 보이지 않도록 설정 */
+#mt4 {
+  opacity: 0;
+  visibility: hidden;
+  animation: mt4 5s ease-in-out forwards;
+  /* 다른 필요한 스타일들도 추가할 수 있습니다. */
+}
+
+/* 애니메이션 키프레임 정의 */
+@keyframes mt4 {
+  30% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  70% {
+    opacity: 1;
+    color: rgb(255, 85, 0);
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*PenPick 이벤트이미지와 링크 묶어놓은 div*/
+#Event {
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/*PenPick 이벤트이미지로 넘어가는 이미지*/
+#EventImg {
+  width: 370px;
+  margin-top: 5px;
+  margin-right: 30px;
+  border-radius: 15px;
+}
+
+/* 이벤트 이미지 모아놓은 박스 */
+#EventImgBox {
+  text-align: center;
+}
+
+/* 이벤트 타이틀 */
+#EventTitle {
+  font-weight: 600;
+}
+
+/*PenPick 검색창*/
+#SearchForm {
+  background-color: white;
+  height: 150px;
+  width: 1200px;
+  margin: auto;
+  border-radius: 20px;
+  color: black;
+  border: none;
+  margin-top: 10px;
+}
+
+#form_Img_Title {
+  padding-top: 20px;
+  width: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 24px;
+  box-shadow: 0px 3px 0px rgb(0, 122, 243);
+  z-index: 2;
+}
+
+/* 검색창 안의 집 이미지 */
+#formImg {
+  width: 30px;
+  padding-bottom: 10px;
+}
+
+/* 검색창 타이틀 */
+#formTitle {
+  font-size: 20px;
+  color: rgb(0, 122, 243);
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/*PenPick 검색창의 지역 input태그*/
+#input1 {
+  height: 50px;
+  width: 380px;
+  margin-left: 30px;
+  background-color: rgb(243, 241, 241);
+  border: none;
+  border-radius: 10px;
+  padding-top: 7px;
+}
+
+#input1::placeholder,
+#input2::placeholder {
+  color: rgb(184, 184, 184);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/*PenPick 검색창의 인원 input태그*/
+#input2 {
+  height: 50px;
+  width: 150px;
+  margin-left: 10px;
+  background-color: rgb(243, 241, 241);
+  border: none;
+  border-radius: 10px;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+
+/*PenPick 검색창의 날짜 input태그*/
+#input3 {
+  height: 50px;
+  width: 230px;
+  margin-left: 10px;
+  background-color: rgb(243, 241, 241);
+  border: none;
+  border-radius: 10px;
+  padding-top: 7px;
+}
+
+/*PenPick 검색창 속 파란색 막대기 신경 안써도 됨*/
+#SearchFormBar {
+  background-color: rgb(227, 227, 227);
+  width: 1150px;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 17px;
+  margin-top: 3px;
+}
+
+/*PenPick 검색창의 검색버튼*/
+#MainsearchButton {
+  width: 120px;
+  background-color: rgb(0, 122, 243);
+  color: white;
+  margin-left: 15px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+#MainsearchButton:hover {
+  background-color: rgb(0, 62, 205);
+}
+
+/* 펜션 인기순위 */
+#PopularPensionList {
+  margin: auto;
+  width: 1200px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+/* 인기 지역 목록 */
+#PopularLocation {
+  width: 1200px;
+  margin: auto;
+}
+
+/* 모든 a태그 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 펜션 이미지 예시 */
+#pensionImg {
+  width: 278px;
+  margin-right: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease-out;
+}
+
+#pensionImg:hover {
+  transform: translateY(-5px);
+}
+
+#MainPopularLocationButton {
+  background-color: white;
+  border: none;
+  margin-right: 100px;
+}
+
+/* 펜션 사진, 지역 사진 감싼 박스 */
+#LinkImgBox {
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* 인기 펜션  타이틀 */
+#PopularPensionTitle {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* 인기 지역 타이틀 */
+#PopularLocationTitle {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+#MainPopularLocationName {
+  float: left;
+  font-size: 13px;
+  margin-top: 13px;
+  margin-left: 8px;
+  color: black;
+}
+
+#popularPensionGroup {
+  width: 300px;
+}
+
+/* 인기펜션 , 인기지역 설명 */
+#description {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+/* 지역 카테고리 */
+#MainLocationButton {
+  background-color: lightblue;
+  border: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin: auto;
+  transition: all 0.3s ease-out;
+}
+
+/* 지역 카테고리2 */
+#MainLocationButton2 {
+  background-color: lightblue;
+  border: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-out;
+}
+
+#MainLocationButton2:hover,
+#MainLocationButton:hover {
+  transform: translateY(-5px);
+}
+
+#MainLocationLinkBox {
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 1230px;
+}
+
+/* 지역링크 타이틀만 감싼박스 */
+#BigLocationList {
+  padding-bottom: 20px;
+  width: 1200px;
+  margin: auto;
+}
+
+/* 지역 전체 목록 */
+#LocationList {
+  margin: auto;
+  width: 1230px;
+  margin-top: 80px;
+  margin-bottom: 300px;
+}
+
+#BigLocationListdescription {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#ChatImg {
+  width: 50px;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  position: fixed;
+  bottom: 100px;
+  right: 250px;
+  transition: transform 0.5s ease;
+}
+
+#ChatImg:hover {
+  transform: rotateY(180deg); /* 수평으로 180도 회전하는 효과 */
+  width: 53px;
+}
+
+#mainContainer {
+  width: 1400px;
+  margin: auto;
+}
+
+/* 채팅방 */
+#messageBox {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* 채팅방 모든 요소 감싼 박스 */
+#ChatContainer {
+  width: 100%;
+  max-width: 800px;
+  max-height: 900px;
+  margin: auto;
+  height: 100%;
+  background-color: rgb(219, 247, 255);
+}
+
+/* 채팅 입력창이랑 버튼 감싼 박스 */
+#messageInput {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 12px 0px 0px 0px;
+}
+
+/* 채팅입력창 */
+#userInputMessage {
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 60px;
+  padding: 3px;
+  padding-left: 15px;
+}
+
+/* 채팅 프로필 */
+#MessageUseImg {
+  width: 50px;
+}
+
+#firstChatbox {
+  width: 100%;
+  height: 823px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#messageInputBox {
+  width: 580px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+#ChatSendButton {
+  border: none;
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#messageInputBox:focus {
+  outline: none;
+}
+
+/* 자!! 스크롤바를 한번 꾸며보자~~ */
+#firstChatbox::-webkit-scrollbar {
+  background: rgba(224, 224, 224, 0.408);
+  padding: 1px;
+  border-radius: 0px 10px 0px 0px;
+}
+
+#firstChatbox::-webkit-scrollbar-thumb {
+  background-color: rgb(198, 198, 198);
+  border-radius: 7px;
+}
+
+#ChatInformation {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+/* 애니메이션 적용 */
+.chatinfo {
+  animation: infoDown 1s ease-in-out forwards;
+}
+
+@keyframes infoDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* sentByUser1 */
+.sentByUser1 {
+}
+
+.MessageUseImg1 {
+  display: none;
+}
+
+.MessageUseImg2 {
+  margin-right: 20px;
+}
+
+.currentTime1 {
+  font-size: 11px;
+  color: rgb(151, 151, 151);
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.currentTime2 {
+  font-size: 11px;
+  color: rgb(151, 151, 151);
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.messageContent1 {
+  background-color: rgb(255, 255, 139);
+  float: right;
+  margin-right: 20px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 6px 20px 10px 20px;
+}
+
+.messageContent2 {
+  background-color: white;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+#Upimg {
+  width: 47px;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  position: fixed;
+  bottom: 100px;
+  right: 180px;
+  transition: transform 0.5s ease;
+}
+
+#Upimg:hover {
+  width: 50px;
+  transform: rotateY(180deg); /* 수평으로 180도 회전하는 효과 */
+}
+
+/* ===============================================Footer=========================================== */
+#footer {
+  margin-bottom: -15px;
+  margin-top: 300px;
+  background-color: rgb(240, 240, 240);
+}
+
+#FooterBox {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+#Footercopylight {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+#FooterAdress {
+  font-size: 12px;
+}
+
+#footerlogo {
+  width: 150px;
+  margin-top: 100px;
+}

@@ -1,0 +1,86 @@
+#signUpArea {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+#sigh-up-title {
+  font-size: xx-large;
+  font-weight: 900;
+  margin-right: 275px;
+}
+#signUpMsg {
+  margin-top: 5px;
+  margin-right: 140px;
+  color: rgb(156, 156, 156);
+}
+#signUpForm {
+  margin: auto; /*중앙정렬*/
+  margin-top: 30px;
+  text-align: center;
+  width: 400px;
+}
+#setEmail,
+#setPassword,
+#checkPassword,
+#setBirthday,
+#setNickname,
+#inputEmailcode,
+#setPhondeNumber {
+  height: 45px;
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(245, 245, 245);
+}
+#setBirthday {
+  width: 400px;
+  border: none;
+  border-radius: 7px;
+}
+
+#setBirthday::placeholder,
+#setEmail::placeholder,
+#setPassword::placeholder,
+#checkPassword::placeholder,
+#setNickname::placeholder,
+#setPhondeNumber::placeholder {
+  color: rgb(205, 205, 205);
+}
+#setEmail:focus,
+#setPassword:focus,
+#checkPassword:focus,
+#setBirthday:focus,
+#setNickname:focus {
+  background-color: white;
+}
+
+#checkEmailButton {
+  float: right;
+  border: none;
+  font-size: small;
+  margin-top: -20px;
+  background-color: white;
+  color: rgb(255, 115, 0);
+}
+#signUpButton {
+  height: 45px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(255, 115, 0);
+  color: white;
+  margin-top: 30px;
+}
+.dot-badge {
+  background: #f45858;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 1px;
+}
+#female {
+  margin-right: 160px;
+  margin-top: 10px;
+}
+#male {
+  margin-right: 90px;
+}

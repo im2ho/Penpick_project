@@ -1,0 +1,32 @@
+.freshw-100 {
+  width: 100%;
+}
+
+.freshwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  overflow: auto;
+}
+
+.freshmax-w-540 {
+  max-width: 540px;
+}
+
+.freshbtn {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: #f2f4f6;
+  color: #4e5968;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.freshbtn.freshprimary {
+  background-color: #3282f6;
+  color: #f9fcff;
+}
