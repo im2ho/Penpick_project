@@ -1,0 +1,704 @@
+/* ==============================게임랜드=============================*/
+@font-face {
+  font-family: 'DNFBitBitv2';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')
+    format('opentype');
+}
+
+#GamelandContainer {
+  width: 100%;
+  margin: 120px 0px 0px 0px;
+}
+
+#GamelandSecondContainer {
+  width: 1200px;
+  margin: auto;
+}
+
+#gamelandgrid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 200px;
+  width: 1000px;
+  margin-top: -100px;
+  margin-left: 150px;
+}
+
+#lottoimg {
+  width: 300px;
+  border-radius: 20px;
+}
+
+#lottoimg:hover {
+  box-shadow: 0px 10px 0px 15px orange;
+  background: orange;
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+}
+
+#lottoQ {
+  font-family: 'DNFBitBitv2';
+  font-size: 30px;
+}
+
+#onegameball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(251, 84, 47);
+  box-shadow: inset -5px -10px 8px rgba(85, 84, 84, 0.398);
+  margin: -234px 0px 0px 140px;
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.5s ease-out;
+}
+
+#onegameball:hover {
+  transform: translateY(-50px);
+}
+
+#gamelandtype1 {
+  font-family: 'DNFBitBitv2';
+  font-size: 20px;
+  text-align: center;
+  margin-left: 5px;
+  color: orangered;
+}
+
+#gamelandtype1box {
+  margin-top: 100px;
+  width: 300px;
+}
+
+#gamelandtitle {
+  font-family: 'DNFBitBitv2';
+  color: rgb(250, 91, 24);
+  font-size: 40px;
+  font-weight: 100;
+  text-shadow: 3px 2px 0px rgb(101, 31, 1);
+}
+
+#gamelandtitle2 {
+  font-family: 'DNFBitBitv2';
+  color: rgb(250, 91, 24);
+  font-size: 40px;
+  font-weight: 100;
+  text-shadow: 3px 2px 0px rgb(101, 31, 1);
+  width: 160px;
+}
+
+/* 코인 이미지 */
+#coinimg {
+  width: 45px;
+  margin-left: 13px;
+  margin-top: -14px;
+  animation: coin 3s ease-out infinite;
+}
+
+@keyframes coin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#gamelandtitle:hover,
+#gamelandtitle2:hover {
+  color: rgb(255, 166, 0);
+}
+
+#gamelanddescription {
+  font-size: 13px;
+  color: rgb(251, 251, 251);
+  text-align: center;
+}
+
+#gamelanddescription {
+}
+
+/* =================================================================== */
+
+#lottoform {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  column-gap: 50px;
+  margin: auto;
+  width: 750px;
+}
+
+#lottoSubmit {
+  margin-top: 30px;
+}
+
+#lottoformcontainer {
+  margin: auto;
+  width: 1000px;
+  background-color: blue;
+  padding: 30px 30px 80px 30px;
+  border-bottom: 30px solid gray;
+  border-top: 33px solid gray;
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+}
+
+#GameLandcontainer {
+  margin: auto;
+  width: 1200px;
+  background-color: rgb(12, 12, 74);
+  padding: 30px 30px 30px 50px;
+  border-bottom: 30px solid gray;
+  border-top: 33px solid gray;
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+}
+
+#windowpopbutton1 {
+  float: right;
+  margin-top: -58px;
+  color: rgb(0, 0, 0);
+  margin-right: 35px;
+  width: 24px;
+  background-color: rgb(170, 170, 170);
+  text-align: center;
+  height: 24px;
+  box-shadow: inset -1.5px -1.5px 0px rgb(32, 32, 32);
+  border-radius: 2px;
+}
+
+#windowpopbutton2 {
+  float: right;
+  margin-top: -58px;
+  color: rgb(0, 0, 0);
+  margin-right: 5px;
+  width: 24px;
+  background-color: rgb(170, 170, 170);
+  text-align: center;
+  height: 24px;
+  font-size: 20px;
+  box-shadow: inset -1.5px -1.5px 0px rgb(32, 32, 32);
+  border-radius: 2px;
+}
+
+#windowpopbutton3 {
+  box-shadow: inset -1.5px -1.5px 0px rgb(32, 32, 32);
+  height: 24px;
+  float: right;
+  margin-top: -58px;
+  font-weight: 900;
+  margin-right: -25px;
+  width: 24px;
+  font-size: 18px;
+  background-color: red;
+  text-align: center;
+  border-radius: 2px;
+}
+
+#windowpopbutton1:hover,
+#windowpopbutton2:hover,
+#windowpopbutton3:hover {
+  box-shadow: inset -1px -1px 0px rgb(32, 32, 32);
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+}
+
+#lottobigcontainer {
+  width: 100%;
+  padding-top: 100px;
+}
+
+#lottosecondContainer {
+  margin: auto;
+  width: 1000px;
+}
+
+#lottosecondContainer2 {
+  margin: auto;
+  width: 1000px;
+}
+
+.roulette-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roulettewheel {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#lottonum1 {
+  color: rgb(57, 24, 24);
+  font-family: 'DNFBitBitv2';
+  width: 150px;
+  text-align: center;
+  height: 180px;
+  font-size: 70px;
+  font-weight: 900;
+  background-color: #d6c5a3;
+  box-shadow: inset -5px -5px 0px rgb(73, 65, 65);
+  border: none;
+  border-radius: 20px;
+}
+
+#lottonum1::-webkit-inner-spin-button {
+  background-color: black;
+  width: 100px;
+}
+
+#lottonum1:hover {
+}
+
+#Randomnumbertitle {
+  font-family: 'DNFBitBitv2';
+  color: #000000;
+  text-shadow: 2px 2px 0px rgb(185, 185, 185);
+  font-size: 35px;
+  display: flex;
+  animation: lotto 5s linear infinite;
+  text-align: center;
+  margin: auto;
+}
+
+/* 행운의 공뽑기 제목 */
+#lottonumbertitle {
+  font-family: 'DNFBitBitv2';
+  color: #000000;
+  text-shadow: 2px 2px 0px rgb(185, 185, 185);
+  font-size: 35px;
+  width: 428px;
+  display: flex;
+  animation: lotto 5s linear infinite;
+  text-align: center;
+  margin: auto;
+}
+
+@keyframes lotto {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: rgb(85, 255, 0);
+  }
+}
+
+#lottogametitle {
+  font-family: 'DNFBitBitv2';
+  color: #000000;
+  text-shadow: 2px 2px 0px rgb(185, 185, 185);
+  font-size: 35px;
+  width: 224px;
+  display: flex;
+  animation: lotto 5s linear infinite;
+  text-align: center;
+  margin: auto;
+}
+
+/* 로또 볼 */
+#lottoballgameimg {
+  width: 400px;
+  display: flex;
+  margin: auto;
+}
+
+/* 공뽑기 설명 */
+#lottonumbertitledescription {
+  font-family: 'DNFBitBitv2';
+  font-weight: 100;
+  color: whitesmoke;
+  margin-left: 10px;
+}
+
+/* 입력칸 제목 */
+#inputlottonumber {
+  font-family: 'DNFBitBitv2';
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 30px;
+}
+
+#lottobtn {
+  font-family: 'DNFBitBitv2';
+  background-color: orange;
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 37%;
+  width: 200px;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 13px 0px 13px rgb(206, 110, 0);
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(43, 33, 33);
+}
+
+#lottobtn:hover {
+  background-color: rgb(232, 151, 1);
+  box-shadow: 0px 11px 0px 13px rgb(206, 110, 0);
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+}
+
+#lottoballbox {
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px gray;
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  gap: 10px;
+  padding-left: 20px;
+  padding-top: 150px;
+  background-color: white;
+}
+
+#ballboxbottom {
+  width: 365px;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 200px solid rgb(255, 208, 79);
+  margin-top: -70px;
+  box-shadow: 0px 20px 0px rgb(157, 120, 17);
+}
+
+#lottoballs {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  column-gap: 10px;
+  margin: -400px 0px 170px 362px;
+}
+
+.lotto0 {
+  font-family: 'DNFBitBitv2';
+  background-color: rgb(255, 97, 53);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 25px;
+  animation: all 3s ease infinite;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 10px rgb(98, 98, 98);
+}
+
+.lotto1 {
+  font-family: 'DNFBitBitv2';
+  background-color: rgb(255, 224, 49);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 25px;
+  animation: all 3s ease-out infinite;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 10px rgb(98, 98, 98);
+}
+
+.lotto2 {
+  font-family: 'DNFBitBitv2';
+  background-color: rgb(46, 221, 63);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 25px;
+  animation: all 3s ease-out infinite;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 10px rgb(98, 98, 98);
+}
+
+.lotto3 {
+  font-family: 'DNFBitBitv2';
+  background-color: rgb(39, 183, 255);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 25px;
+  animation: all 3s ease-out infinite;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 10px rgb(98, 98, 98);
+}
+
+@keyframes all {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#lottoresult {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  animation: result 3s ease-out forwards;
+  position: relative;
+}
+
+@keyframes result {
+  0% {
+    transform: translateY(-30px);
+  }
+}
+
+#returnGameland {
+  background-color: orange;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 15px;
+  box-shadow: 0px 5px 0px 3px rgb(200, 67, 0);
+  transition: transform 0.1s ease-out;
+  position: absolute;
+  margin: -5px 0px 0px 12px;
+  font-family: 'DNFBitBitv2';
+}
+
+#fortunetoGameland {
+  background-color: orange;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  padding-top: 15px;
+  box-shadow: 0px 5px 0px 3px rgb(200, 67, 0);
+  transition: transform 0.1s ease-out;
+  position: absolute;
+  margin: 0px 0px 0px 80px;
+  font-family: 'DNFBitBitv2';
+}
+
+#returnGameland:hover {
+  box-shadow: 0px 4px 0px 3px rgb(200, 67, 0);
+  transform: translateY(1px);
+}
+
+#roulettebutton {
+  background: none;
+  border: none;
+}
+
+/* #roulettebutton:hover {
+  margin-top: 61px;
+  box-shadow: 0px 3px 0px 5px #317134;
+} */
+
+#roulettebutton:disabled {
+  font-family: 'DNFBitBitv2';
+  font-size: 18px;
+  cursor: pointer;
+  cursor: not-allowed;
+  color: #000000;
+}
+
+#spinningment {
+  font-family: 'DNFBitBitv2';
+  margin-top: -60px;
+}
+
+#leverimg {
+  background-color: none;
+  width: 40px;
+  height: 120px;
+  margin-left: 20px;
+  position: relative;
+  transition: transform 5s ease;
+}
+#leverimg:hover {
+  transform: rotate(360deg);
+}
+
+#rouletteresult {
+  width: 330px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: -155px 0px 190px 9px;
+  padding: 25px 20px 10px 30px;
+  box-shadow: 0px 5px 0px 7px rgb(115, 115, 115);
+  display: grid;
+  grid-template-columns: 70px 40px 40px 40px 40px;
+  gap: 10px;
+  height: 90px;
+  border-radius: 3px;
+}
+
+#lottoballtitle {
+  padding-top: 6px;
+  font-family: 'DNFBitBitv2';
+  font-weight: 900;
+}
+
+#lottoball1 {
+  font-family: 'DNFBitBitv2';
+  padding-top: 7px;
+  text-align: center;
+  font-weight: 900;
+  background-color: red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  box-shadow: inset -2px -2px 3px rgb(64, 64, 64);
+}
+
+#lottoball2 {
+  font-weight: 900;
+  font-family: 'DNFBitBitv2';
+  padding-top: 7px;
+  text-align: center;
+  background-color: rgb(255, 200, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset -2px -2px 3px rgb(64, 64, 64);
+}
+
+#lottoball3 {
+  font-weight: 900;
+  font-family: 'DNFBitBitv2';
+  padding-top: 7px;
+  text-align: center;
+  background-color: rgb(67, 138, 1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset -2px -2px 3px rgb(64, 64, 64);
+}
+
+#lottoball4 {
+  font-weight: 900;
+  font-family: 'DNFBitBitv2';
+  padding-top: 7px;
+  text-align: center;
+  background-color: rgb(0, 47, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset -2px -2px 3px rgb(64, 64, 64);
+}
+
+#resultball {
+  width: 200px;
+}
+
+/* ==============================================================룰렛============================================================ */
+#Rouleletteformcontainer {
+  margin: auto;
+  width: 1000px;
+  background-color: blue;
+  padding: 30px 30px 80px 30px;
+  border-bottom: 30px solid gray;
+  border-top: 33px solid gray;
+}
+
+/* 포춘쿠키 */
+#fortuneContainer {
+  background-color: white;
+  margin: auto;
+  width: 1000px;
+  padding: 30px 30px 30px 50px;
+  border-bottom: 30px solid gray;
+  border-left: 5px solid gray;
+  border-right: 5px solid gray;
+  border-top: 33px solid gray;
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+  height: 520px;
+}
+
+#fortunegrid {
+  margin: auto;
+  width: 330px;
+}
+
+#fortunetitle {
+  font-family: 'DNFBitBitv2';
+  color: #000000;
+  text-shadow: 2px 2px 0px rgb(185, 185, 185);
+  font-size: 35px;
+  width: 180px;
+  display: flex;
+  animation: lotto 5s linear infinite;
+  text-align: center;
+  margin: auto;
+}
+
+#fortuneImgBox {
+  width: 200px;
+  margin: auto;
+}
+
+#fortuneImg {
+  width: 200px;
+  margin: 30px 0px 20px 0px;
+}
+
+#fortuneImg:hover {
+  animation: shake 0.2s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#fortunecookiement {
+  text-align: center;
+}
+
+#fortuneResultBox {
+  height: 350px;
+}
+
+#GamelandfortuneContainer {
+  width: 1000px;
+  margin: auto;
+}
+
+#fortuneImg2 {
+  margin: 25px 0px 0px 0px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+#fortuneImg2:hover {
+  box-shadow: 0px 10px 0px 15px orange;
+  background: orange;
+  cursor: url('../img/cursor\ \(8\).cur'), auto;
+  padding: -10px -10px 10px 10px;
+}

@@ -1,0 +1,9 @@
+#write-question-form{
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    padding-top: 50px;
+    border-radius: 8px;
+    height: 600px;
+}

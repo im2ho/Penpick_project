@@ -1,0 +1,508 @@
+/* header 바로 아래 div */
+#detailpage {
+  margin-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 구분하려고 넣음 */
+#detailpage-sub {
+  display: flex;
+  justify-content: center;
+}
+
+/* 상세페이지 이미지 컨테이너 */
+#detail-img-container {
+  max-width: 1200px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+}
+
+/* 상세페이지 첫번째 사진 (큰거) */
+#detail-main-img1 {
+  border-radius: 15px 0 0 15px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 상세페이지 2~5번째 사진 ( 작은거 ) */
+#detail-sub-img2,
+#detail-sub-img3,
+#detail-sub-img4,
+#detail-sub-img5 {
+  width: 100%;
+  height: 100%;
+}
+#detail-main-img1:hover,
+#detail-sub-img2:hover,
+#detail-sub-img3:hover,
+#detail-sub-img4:hover,
+#detail-sub-img5:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+/* 끝부분 둥글게 다듬기 */
+#detail-sub-img4 {
+  border-radius: 0 15px 0 0;
+}
+
+/* 끝부분 둥글게 다듬기 */
+#detail-sub-img5 {
+  border-radius: 0 0 15px 0;
+}
+
+/* grid를 개별적으로 넣기위한 개별 css */
+#detail-main-img-grid {
+  position: relative;
+  grid-row: span 2 / span 2;
+
+  height: 512px;
+  width: 640px;
+}
+
+#detail-sub-img-grid {
+  position: relative;
+  grid-column: span 1 / span 1;
+  height: 252px;
+  width: 272px;
+}
+
+/* 상세페이지 4~5번째 사진 ( 작은거 )
+  #detail-sub-img-low {
+    height: 252px;
+    width: 272px;
+    grid-column: span 1 / span 1;
+    position: relative;
+    text-align: bottom;
+  } */
+
+#detail-img-section {
+  margin-bottom: 40px;
+}
+
+/* 모달에 나올 이미지 크기 */
+#modal-main-img {
+  width: 80%;
+  height: 0 auto;
+}
+
+/* DetailsModalButton <Modal> */
+#modalpage {
+  height: 100%;
+  max-height: 900px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* DetailsServiceModal <Modal.Body> */
+#modal-body-main {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+/* 이미지 모달 body */
+#modal-body-img {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+}
+
+/* 객실 상세정보 모달 body 감싸는 css */
+#modal-body-main-room {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 객실 상세정보 모달 body title css */
+#modal-body-text-room-title {
+  color: rgb(73 98 122);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 0 20px;
+}
+
+/* 객실 상세정보 모달 footer title css */
+#modal-footer-text-room-title {
+  color: rgb(73 98 122);
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 0 20px;
+}
+
+/* 객실 상세정보 모달 body text css */
+#modal-body-text-room {
+  color: rgb(112 112 112);
+  margin: 10px 0 0 20px;
+  font-size: 14px;
+}
+
+/* 객실 상세정보 모달 footer text css */
+#modal-body-text-room {
+  color: rgb(112 112 112);
+  margin: 10px 0 0 20px;
+  font-size: 14px;
+}
+
+#modal-footer-room {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* modal-footer-refund css */
+#modal-footer-refund-box {
+  background-color: rgb(255 246 246);
+  border-radius: 8px;
+  color: rgb(244 88 88);
+  font-size: 12px;
+  margin: 10px 20px 10px 20px;
+  padding: 15px;
+}
+
+#modal-footer-refund-text {
+  padding: 5px;
+  font-size: 11px;
+}
+
+/* modal, footer 구분선 */
+#modal-section {
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+/* modal-body를 감싸는 div */
+#modal-body-div {
+  background-color: rgb(201, 201, 214);
+}
+
+/* modal 타이틀 텍스트 */
+#modal-header-title {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+/* 사진 모두보기 버튼 */
+#modal-btn {
+  position: absolute;
+  top: 185px;
+  left: 125px;
+}
+
+/* 서비스 더보기 버튼 커서 올릴시 반응 */
+#modal-service-btn:hover,
+#modal-room-btn:hover {
+  text-decoration: underline; /* 언더라인(아래줄) 스타일 부여 */
+}
+#modal-service-btn {
+  color: rgb(18 115 228);
+}
+#modal-room-btn {
+  background-color: rgb(245 247 250);
+  color: rgb(18 115 228);
+}
+
+/* 상세페이지 타이틀 */
+#detail-title {
+  padding: 20px 0 20px 0;
+}
+
+#detail-title-text {
+  padding: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: rgb(96, 98, 99);
+}
+
+#detail-title-name {
+  font-weight: 900;
+}
+
+/* 눈누 네이버 폰트 링크 */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+/* 상세페이지 리뷰 타이틀 */
+#detail-review-title {
+  padding: 0 0 20px 0;
+}
+
+/* 상세페이지 리뷰 컨테이너 */
+#detail-review-container {
+  height: 153px;
+  width: 486px;
+  display: flex;
+  background-color: rgb(250 250 250);
+  padding: 20px 22px 20px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* 서비스 및 부대시설 컨테이너*/
+#detail-service-container {
+  margin-bottom: 20px;
+}
+
+/* 구분선 */
+#detail-lines {
+  --tw-bg-opacity: 1;
+  height: 1px;
+  background-color: rgb(235 235 235);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* linse-text 의 부제목 */
+#detail-linse-head-text {
+  color: rgb(73 98 122);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+/* linse-text 내용 */
+#detail-lines-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgb(112 112 112);
+}
+
+/* 펜션 라인별 타이틀 */
+#detail-lines-title {
+  padding: 0 0 20px 0;
+  font-weight: 600;
+}
+
+/* head-text 안에 담길 내용 */
+#detail-li-text {
+  color: rgb(122, 120, 120);
+  font-weight: 100;
+  font-size: 13px;
+  margin: 12px 0 12px 0;
+}
+
+/* 강조해야하는 text */
+#detail-li-text-caution {
+  color: rgb(105, 105, 105);
+  font-weight: 900;
+  font-size: 13px;
+  margin: 12px 0 12px 0;
+}
+
+/* 구분하기위한 css */
+#detail-li-caution-head {
+  padding: 20px 0 20px 0;
+}
+
+/* 객실 선택란 감싸는 컨테이너 */
+#detail-room-container {
+  height: 291px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(245 247 250);
+  padding: 20px 22px 20px 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+#detail-room-sub-container {
+  width: 100%;
+}
+
+#detail-room-img {
+  width: 44%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+/* 객실 선택 이미지 박스 */
+#detail-room-imgbox {
+  width: 100%;
+}
+
+/* 객실 선택쪽 객실 이름 */
+#detail-room-name {
+  vertical-align: top;
+  font-weight: 600;
+  padding-left: 47%;
+}
+
+/* 각종 상세정보, 지도 쿠폰항목 감싸는 section */
+#pension-service-section {
+  width: 1200px;
+}
+/* section 안 펜션 각종 상세정보 */
+#pension-div-box {
+  width: 792px;
+  float: left;
+}
+
+/* 상세 페이지 지도,쿠폰 항목 */
+#detail-page-right-map-coupon-box {
+  float: right;
+  width: 380px;
+  padding-left: 44px;
+}
+
+/* kakao map css */
+#detail-right-map-box {
+  width: 340px;
+  height: 250px;
+}
+
+/* detail coupon box css */
+#detail-right-coupon-box {
+  width: 340px;
+}
+
+/* 객실 예약 박스 */
+#detail-room-checkIObox {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 16px;
+  margin-left: 47%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 객실 예약 박스 체크인 */
+#room-check-in {
+  color: rgb(112 112 112);
+  font-size: 11px;
+}
+
+/* 객실 예약 박스 */
+#room-reservation-text {
+  float: right;
+  margin-top: -6%;
+}
+
+/* 객실 예약 버튼 css */
+#reservation-btn {
+  border-radius: 8px;
+  font-size: 11px;
+  border: 10px;
+  float: right;
+}
+
+/* 객실 예약 가격 css */
+#room-reservation-price {
+  float: right;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(51 51 51);
+  margin-bottom: 10%;
+}
+
+/* 객실 선택 box 정보 */
+#detail-room-people {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0 0 47%;
+}
+
+#detail-room-people-title {
+  font-size: 10px;
+  width: 100%;
+}
+
+#detail-room-people-text {
+  margin-left: 42px;
+}
+
+/* 여기어떄 폰트 */
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 맨 아래 취소 및 환불 규정 */
+#detail-head-refund {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(51 51 51);
+}
+
+/* 상세페이지 오른쪽 작은 지도 */
+#map {
+  width: 340px;
+  height: 168px;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid rgb(235 235 235);
+  border-color: rgb(235 235 235);
+  z-index: -1;
+}
+
+/* 작은 지도 클릭시 나오는 모달 맵 */
+#modalmap {
+  width: 800px;
+  height: 800px;
+}
+
+#map-pension-name {
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid rgb(235 235 235);
+  border-radius: 0 0 12px 12px;
+}
+
+/* detail 페이지 하단 지도 감싸는 div */
+#detail-bottom-kakao-map {
+  width: 100%;
+  height: 500px;
+  padding: 20px 0 20px 0;
+}
+
+/* 위치정보, 리뷰댓글쪽 secsion */
+#detail-review-map-secsion {
+  padding-bottom: 20px;
+}
+
+/* 하단 카카오맵 주소 css */
+#detail-bottom-kakao-map-address {
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 지도 크게보기 버튼 */
+#map-btn-icon {
+  position: relative;
+  z-index: 0;
+}
+#map-btn-icon:hover {
+  filter: brightness(0.96);
+}
+
+/* 지도 크게보기 이미지 css */
+#mapOption-btn-img {
+  width: 20px;
+  height: 20px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+  fill: rgb(51, 51, 51);
+}

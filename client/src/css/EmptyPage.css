@@ -1,0 +1,18 @@
+#emptyPage-container{
+    margin-top: 300px;
+    text-align: center;
+}
+#warning-logo{
+    width: 120px;
+    opacity: 90%;
+}
+#warning-title{
+    margin-top: 30px;
+    font-weight: 500;
+    color: rgb(145, 145, 145);
+    margin-bottom: 20px;
+}
+#back-to-home-link{
+    color: blue;
+    font-size: small;
+}

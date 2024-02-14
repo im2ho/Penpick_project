@@ -1,0 +1,68 @@
+/* 고객센터 컨테이너 스타일 */
+#QnA-container {
+  margin: auto;
+  margin-top: 150px;
+  width: 80%;
+  max-width: 1200px;
+  height: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 고객센터 헤더 스타일 */
+#QnA-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#QnA-header h4 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#QnA-description {
+  font-size: 18px;
+  color: #666;
+}
+
+/* 질문 내용 */
+#question-content{
+  margin : auto;
+  width : 95%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* 답변 입력 컴포넌트 스타일 */
+#answer-input {
+  margin-top: 20px;
+}
+
+#answer-input textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+#answer-input button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+#answer-input button:hover {
+  background-color: #0056b3;
+}

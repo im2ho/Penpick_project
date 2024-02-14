@@ -1,0 +1,76 @@
+.main{
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+#loginForm{
+    margin:auto; /*중앙정렬*/
+    margin-top: 80px;
+    text-align: center;
+    width: 400px;
+}
+#emailLoginTitle{
+    font-size: x-large;
+    margin-right:210px;
+    margin-top: 80px;
+}
+#emailInput, #passwordInput{
+    height: 45px;
+    background-color: rgb(245, 245, 245);
+    border-color: rgb(241, 241, 241);
+}
+#emailInput::placeholder, #passwordInput::placeholder{
+    color:rgb(205, 205, 205);
+}
+#emailInput:focus, #passwordInput:focus{
+    background-color: white;
+}
+#loginButton{
+    height: 45px;
+    width: 100%;
+    border-radius: 7px;
+    border:none;
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+#signUpMessage{
+    margin-top: 30px;
+}
+#social-login-line{
+    display: flex;
+    flex-basis:100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 12px;
+    margin: 8px 0px;
+}
+#social-login-line::before, #social-login-line::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(117, 117, 117, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+}
+
+#naverLogin-button{
+    height: 44px;
+    margin:auto;
+}
+
+#reset-password{
+    color:gray;
+    text-decoration: underline;
+    font-style:unset;
+    float: right;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+#reset-password:hover{
+    color:lightgray;
+}

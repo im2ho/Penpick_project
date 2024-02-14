@@ -1,0 +1,59 @@
+/* 답변 영역 스타일 */
+#answer-content {
+    margin-top: 30px;
+    background-color: white;
+    width: 95%;
+    height: 300px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#answer-content textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#answer-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#answer-content button:hover {
+    background-color: #0056b3;
+}
+
+#answer-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#no-answer-content {
+    text-align: center;
+}
+
+#write-answer-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#write-answer-button:hover {
+    background-color: #218838;
+}
