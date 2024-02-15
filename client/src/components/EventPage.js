@@ -53,7 +53,7 @@ function EventPage() {
           <div id='EventCategory'>
             <h5 id='eventcategory'>이벤트</h5>
             {currentURL === 'eventTitle'}
-            <a id='eventlink1' href='eventTitle'>
+            <a id='eventlink1' href='eventPage'>
               이벤트
             </a>
             <br></br>

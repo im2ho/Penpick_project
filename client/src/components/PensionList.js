@@ -92,7 +92,7 @@ function PensionList() {
   const selectedRegion = urlParams.get('region');
 
   // 필터링 버튼
-  const [filterButton, setFilterButton] = useState(null);
+  const [filterButton, setFilterButton] = useState('');
 
   const navigate = useNavigate();
   // 상세 페이지에 id값 넘기기
@@ -455,6 +455,18 @@ function PensionList() {
                   >
                     캠프파이어
                   </button>
+
+                  {filterButton !== '' && (
+                    <div>
+                      <p id='CheckfilterTitle'>선택한 옵션</p>
+                      <button id='Checkfilter'>
+                        {filterButton}
+                        <span id='pensionListXbutton'>X</span>
+                      </button>
+                    </div>
+                  )}
+
+                  <hr id='hrfilter' />
                 </div>
               </form>
             </div>

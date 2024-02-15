@@ -23,6 +23,10 @@ function ReservationCheck() {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const [pensionId,setPensionId] = useState([]);
+
+  
+
     //체크인 날짜 받기
     const inputcheckinDate = location.state?.inputcheckinDate;
 
@@ -40,6 +44,7 @@ function ReservationCheck() {
   
     // 방 가격
     const roomPrice = location.state?.roomPrice;
+    console.log(selectedId);
 
   const handleSelectedId = (id) => {
     const selectedId = id;
@@ -55,7 +60,35 @@ function ReservationCheck() {
         selectedId,
       },
     });
+    handleReservationId();
   };
+  
+  const handleOrderDetailPage = (id) => {
+    const selectedId = id;
+
+    navigate("/FinishOrder", {
+      state: {
+        selectedId,
+      },
+    });
+  };
+
+  const handleReservationId = (reservation) => {
+    const selectedReservation = reservation;
+
+    navigate("/ReservationCheckDetail",{
+      state: {
+        selectedReservation,
+      }
+    })
+  }
+
+ 
+
+  // useEffect(() => {
+  //   window.sessionStorage.setItem("idParam");
+  // },[]);
+  // console.log("펜션id",);
 
   
 
@@ -104,6 +137,7 @@ function ReservationCheck() {
       fetchReservationData();
     }
   }, [userInfo]);
+  
  
 
   function searchRoom() {
@@ -190,8 +224,18 @@ function ReservationCheck() {
                     </button>
                     <button
                     id="detailButton"
-                    onClick={() => handleReservationCheckDetailPage(reservation.id)}
-                    >상세보기</button>
+                    onClick={() =>
+                       handleReservationCheckDetailPage(reservation.id)
+                      }
+                    >
+                      상세보기
+                    </button>
+                    <button
+                      id="detailButton"
+                      onClick={() => handleOrderDetailPage(reservation.id)}
+                    >
+                      프레쉬보기
+                    </button>
                   </li>
                 ))}
                 ;

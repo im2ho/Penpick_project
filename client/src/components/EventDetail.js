@@ -104,49 +104,63 @@ function EventDetail() {
   return (
     <div>
       <Header />
-      <div id='Detailcontainer'>
-        <div id='detailContent'>{searchTerm}</div>
-        <div id='eventContentimgBox'>
-          <img
-            id='eventContentimg'
-            src={imagePaths[searchTerm]}
-            alt='이벤트'
-          ></img>
+      <div id='eventdetailMainContainer'>
+        <div id='EventdetailCategory'>
+          <h5 id='eventcategory'>이벤트</h5>
+          <a id='eventlink1' href='eventPage'>
+            이벤트
+          </a>
+          <br></br>
+          <a href='GameLand' id='gamelandlink1'>
+            게임랜드
+          </a>
         </div>
-      </div>
-      <div id='eventform' className='row'>
-        <input
-          className='form-control col-md-9'
-          id='eventComments'
-          type='text'
-          value={contentList.comments}
-          placeholder='댓글을 입력해주세요'
-          onChange={(e) =>
-            setContentList((prevContentList) => ({
-              ...prevContentList,
-              comments: e.target.value,
-              content: searchTerm,
-              content_id: null,
-              commentdate: commentdate,
-            }))
-          }
-        ></input>
-        <button
-          className='btn btn-primary col-md-3'
-          id='eventFormButton'
-          onClick={handleAddEvent}
-        >
-          작성하기
-        </button>
-        {saveList.map((list) => (
-          <div key={list.id}>
-            <hr />
-            <span id='eventReviewName'>{list.userId}</span>
-            <br />
-            {list.comments}
-            <span id='eventCommentDate'>{list.commentdate}</span>
+        <div id='eventdetailSecondContainer'>
+          <div id='Detailcontainer'>
+            <div id='detailContent'>{searchTerm}</div>
+            <div id='eventContentimgBox'>
+              <img
+                id='eventContentimg'
+                src={imagePaths[searchTerm]}
+                alt='이벤트'
+              ></img>
+            </div>
           </div>
-        ))}
+          <div id='eventform' className='row'>
+            <input
+              className='form-control col-md-9'
+              id='eventComments'
+              type='text'
+              value={contentList.comments}
+              placeholder='댓글을 입력해주세요'
+              onChange={(e) =>
+                setContentList((prevContentList) => ({
+                  ...prevContentList,
+                  comments: e.target.value,
+                  content: searchTerm,
+                  content_id: null,
+                  commentdate: commentdate,
+                }))
+              }
+            ></input>
+            <button
+              className='btn btn-primary col-md-3'
+              id='eventFormButton'
+              onClick={handleAddEvent}
+            >
+              작성하기
+            </button>
+            {saveList.map((list) => (
+              <div key={list.id}>
+                <hr />
+                <span id='eventReviewName'>{list.userId}</span>
+                <br />
+                {list.comments}
+                <span id='eventCommentDate'>{list.commentdate}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

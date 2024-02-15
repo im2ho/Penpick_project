@@ -205,7 +205,7 @@ function Header() {
         setUserEmail(res.data.userEmail);
         setAuthentication(res.data.userEmail);
       } catch (err) {
-        console.error('세션 데이터 불러오기 실패', err);
+        console.error('로그인 정보 없음', err);
       } finally {
         setIsLoading(false);
       }
@@ -230,6 +230,8 @@ function Header() {
         withCredentials: true,
       });
       console.log(response.data);
+      alert('로그아웃 되셨습니다');
+      window.location.href = 'http://localhost:3000/';
     } catch (error) {
       console.error(error);
       alert('로그아웃 되셨습니다');

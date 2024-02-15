@@ -1,7 +1,6 @@
 /* 고객센터 컨테이너 스타일 */
 #QnA-container {
   margin: auto;
-  margin-top: 150px;
   width: 80%;
   max-width: 1200px;
   height: 800px;
@@ -13,9 +12,9 @@
 
 /* 고객센터 헤더 스타일 */
 #QnA-header {
-  margin-top: 30px;
+  margin-top: 120px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 145px;
 }
 
 #QnA-header h4 {
@@ -30,9 +29,9 @@
 }
 
 /* 질문 내용 */
-#question-content{
-  margin : auto;
-  width : 95%;
+#question-content {
+  margin: auto;
+  width: 95%;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
